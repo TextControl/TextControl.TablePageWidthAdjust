@@ -25,10 +25,11 @@
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\</OutputPath>
@@ -46,6 +47,7 @@
     <WarningLevel>1</WarningLevel>
     <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
     <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\</OutputPath>
@@ -63,6 +65,7 @@
     <WarningLevel>1</WarningLevel>
     <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
     <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -71,30 +74,28 @@
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-    </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms">
       <Name>System.Windows.Forms</Name>
     </Reference>
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <Reference Include="TXDrawing, Version=24.0.200.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+    <Reference Include="TXDrawing, Version=30.0.600.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 24.0.NET for Windows Forms\Assembly\TXDrawing.dll</HintPath>
+      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 30.0.NET for Windows Forms\Assembly\TXDrawing.dll</HintPath>
     </Reference>
-    <Reference Include="TXDrawing.Windows.Forms, Version=24.0.200.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+    <Reference Include="TXDrawing.Windows.Forms, Version=30.0.600.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 24.0.NET for Windows Forms\Assembly\TXDrawing.Windows.Forms.dll</HintPath>
+      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 30.0.NET for Windows Forms\Assembly\TXDrawing.Windows.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="TXTextControl, Version=24.0.1700.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+    <Reference Include="TXTextControl, Version=30.0.2300.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 24.0.NET for Windows Forms\Assembly\TXTextControl.dll</HintPath>
+      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 30.0.NET for Windows Forms\Assembly\TXTextControl.dll</HintPath>
     </Reference>
-    <Reference Include="TXTextControl.Windows.Forms, Version=24.0.900.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+    <Reference Include="TXTextControl.Windows.Forms, Version=30.0.1500.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 24.0.NET for Windows Forms\Assembly\TXTextControl.Windows.Forms.dll</HintPath>
+      <HintPath>C:\Program Files\Text Control GmbH\TX Text Control 30.0.NET for Windows Forms\Assembly\TXTextControl.Windows.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +120,7 @@
     <EmbeddedResource Include="My Project\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="default.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
